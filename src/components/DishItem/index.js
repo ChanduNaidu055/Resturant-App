@@ -1,6 +1,6 @@
 import './index.css'
 
-const DishItem = ({dish, count, onIncrement, onDecrement}) => {
+const DishItem = ({dish, count, onDecrement, onIncrement, onAddToCart}) => {
   const {
     dish_id: dishId,
     dish_name: dishName,
@@ -15,6 +15,14 @@ const DishItem = ({dish, count, onIncrement, onDecrement}) => {
   } = dish
 
   const isCustomizations = Array.isArray(addonCat) && addonCat.length > 0
+
+  const onClickPlus = () => {
+    onIncrement(dishId)
+  }
+
+  const onClickMinus = () => {
+    onDecrement(dishId)
+  }
 
   return (
     <div className="dish-card">
@@ -38,25 +46,27 @@ const DishItem = ({dish, count, onIncrement, onDecrement}) => {
         </div>
 
         {isAvailable ? (
-          <div className="dish-quantity-controls">
-            <button
-              type="button"
-              onClick={() => onDecrement(dishId)}
-              className="qty-btn"
-            >
-              -
-            </button>
+          <>
+            <div className="dish-quantity-controls">
+              <button className="qty-btn" type="button" onClick={onClickMinus}>
+                -
+              </button>
+              <p className="qty-count">{count}</p>
+              <button className="qty-btn" type="button" onClick={onClickPlus}>
+                +
+              </button>
+            </div>
 
-            <p className="qty-count">{count}</p>
-
-            <button
-              type="button"
-              onClick={() => onIncrement(dishId)}
-              className="qty-btn"
-            >
-              +
-            </button>
-          </div>
+            {count > 0 && (
+              <button
+                type="button"
+                className="add-to-cart-btn"
+                onClick={() => onAddToCart(dish)}
+              >
+                ADD TO CART
+              </button>
+            )}
+          </>
         ) : (
           <p className="not-available-text">Not available</p>
         )}

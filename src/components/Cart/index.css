@@ -1,0 +1,133 @@
+.cart-page-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.cart-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.remove-all-btn {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.remove-all-btn:hover {
+  background-color: #e63939;
+}
+
+.empty-cart-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.empty-cart-image {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.empty-cart-text {
+  font-size: 18px;
+  color: #666;
+}
+
+.cart-items-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.cart-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item-name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.qty-controls {
+  display: inline-flex;
+  align-items: center;
+  background-color: green;
+  border-radius: 16px;
+  padding: 5px;
+  width: 90px;
+  height: 35px;
+  color: #ffffff;
+}
+
+.qty-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  width: 30px;
+  font-weight: 600;
+  outline: none;
+}
+
+.qty-value {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cart-item-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-left: 10px;
+}
+
+.remove-item-btn {
+  background-color: transparent;
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.remove-item-btn:hover {
+  background-color: #ff4d4d;
+  color: #fff;
+}

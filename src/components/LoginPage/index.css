@@ -1,0 +1,128 @@
+.login-heading {
+  font-family: 'Bree Serif';
+  font-size: 35px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  width: 300px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  background-image: url('https://cdn.prod.website-files.com/65097d6578d1dcb1e84efa23/65f04eeb1060110e24fd221a_65bb68ddd3a052f06e414f82_19%2520Column%25201-p-1600.webp');
+  background-size: cover;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  background-color: transparent;
+  height: 400px;
+}
+.input-label {
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.username-input-field {
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid #d7dfe9;
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+  width: 100%;
+  padding-left: 60px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+.password-input-field {
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid #d7dfe9;
+  background-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+  width: 100%;
+  padding-left: 60px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+.login-button {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 10px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  background-color: orange;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 45%;
+  transform: translateY(-50%);
+  color: red;
+  pointer-events: none;
+  height: 20px;
+  width: 20px;
+}
+.input-icon-2 {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+  pointer-events: none;
+  height: 22px;
+  width: 22px;
+}
+.error-message {
+  align-self: start;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  line-height: 16px;
+  color: white;
+  margin-top: 5px;
+}
